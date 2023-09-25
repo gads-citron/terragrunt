@@ -688,7 +688,7 @@ func sopsDecryptFile(params []string, trackInclude *TrackInclude, terragruntOpti
 	if err != nil {
 		return "", errors.WithStackTrace(err)
 	}
-	canonicalSourceFile, err := util.CanonicalPath(sourceFile, terragruntOptions.WorkingDir)
+	canonicalSourceFile, err := util.CanonicalPath(sourceFile, filepath.Dir(terragruntOptions.TerragruntConfigPath))
 	if err != nil {
 		return "", errors.WithStackTrace(err)
 	}
@@ -697,7 +697,7 @@ func sopsDecryptFile(params []string, trackInclude *TrackInclude, terragruntOpti
 		return val, nil
 	}
 
-	rawData, err := decrypt.File(sourceFile, format)
+	rawData, err := decrypt.File(canonicalSourceFile, format)
 	if err != nil {
 		return "", errors.WithStackTrace(err)
 	}
