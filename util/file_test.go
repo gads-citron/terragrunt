@@ -10,7 +10,7 @@ import (
 
 	"fmt"
 
-	"github.com/gruntwork-io/terragrunt/test/helpers"
+	"github.com/gads-citron/terragrunt/test/helpers"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

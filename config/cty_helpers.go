@@ -9,8 +9,8 @@ import (
 	"github.com/zclconf/go-cty/cty/gocty"
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terragrunt/options"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/terragrunt/options"
 )
 
 // Create a cty Function that takes as input parameters a slice of strings (var args, so this slice could be of any

@@ -10,13 +10,13 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/gruntwork-io/go-commons/collections"
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/go-commons/files"
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/shell"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/go-commons/collections"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/go-commons/files"
+	"github.com/gads-citron/terragrunt/config"
+	"github.com/gads-citron/terragrunt/options"
+	"github.com/gads-citron/terragrunt/shell"
+	"github.com/gads-citron/terragrunt/util"
 )
 
 const maxLevelsOfRecursion = 20
@@ -185,7 +185,7 @@ func flagModulesThatDontInclude(modules []*TerraformModule, terragruntOptions *o
 		module.FlagExcluded = true
 		for _, includeConfig := range module.Config.ProcessedIncludes {
 			// resolve include config to canonical path to compare with modulesThatIncludeCanonicalPath
-			// https://github.com/gruntwork-io/terragrunt/issues/1944
+			// https://github.com/gads-citron/terragrunt/issues/1944
 			canonicalPath, err := util.CanonicalPath(includeConfig.Path, module.Path)
 			if err != nil {
 				return nil, err
@@ -321,7 +321,7 @@ func resolveTerraformModule(terragruntConfigPath string, moduleMap map[string]*T
 		opts.DownloadDir = downloadDir
 	}
 
-	// Fix for https://github.com/gruntwork-io/terragrunt/issues/208
+	// Fix for https://github.com/gads-citron/terragrunt/issues/208
 	matches, err := filepath.Glob(filepath.Join(filepath.Dir(terragruntConfigPath), "*.tf"))
 	if err != nil {
 		return nil, err

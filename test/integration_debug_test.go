@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/shell"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/terragrunt/options"
+	"github.com/gads-citron/terragrunt/shell"
+	"github.com/gads-citron/terragrunt/util"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

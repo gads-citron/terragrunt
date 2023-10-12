@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/shell"
-	"github.com/gruntwork-io/terragrunt/tflint"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/terragrunt/config"
+	"github.com/gads-citron/terragrunt/options"
+	"github.com/gads-citron/terragrunt/shell"
+	"github.com/gads-citron/terragrunt/tflint"
+	"github.com/gads-citron/terragrunt/util"
 	"github.com/hashicorp/go-multierror"
 )
 
@@ -29,7 +29,7 @@ func processErrorHooks(hooks []config.ErrorHook, terragruntOptions *options.Terr
 			for _, e := range err {
 				errorMessage := e.Error()
 				// Check if is process execution error and try to extract output
-				// https://github.com/gruntwork-io/terragrunt/issues/2045
+				// https://github.com/gads-citron/terragrunt/issues/2045
 				originalError := errors.Unwrap(e)
 				if originalError != nil {
 					processError, cast := originalError.(shell.ProcessExecutionError)
@@ -104,7 +104,7 @@ func shouldRunHook(hook config.Hook, terragruntOptions *options.TerragruntOption
 	//then execute.
 	//Skip execution if there was an error AND we care about errors
 
-	//resolves: https://github.com/gruntwork-io/terragrunt/issues/459
+	//resolves: https://github.com/gads-citron/terragrunt/issues/459
 	hasErrors := previousExecErrors.ErrorOrNil() != nil
 	isCommandInHook := util.ListContainsElement(hook.Commands, terragruntOptions.TerraformCommand)
 

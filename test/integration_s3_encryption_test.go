@@ -9,11 +9,11 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/s3"
-	terraws "github.com/gruntwork-io/terratest/modules/aws"
+	terraws "github.com/gads-citron/terratest/modules/aws"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/gruntwork-io/terragrunt/config"
+	"github.com/gads-citron/terragrunt/config"
 )
 
 const (

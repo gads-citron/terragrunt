@@ -6,8 +6,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/s3"
 
 	"github.com/aws/aws-sdk-go/aws"
-	"github.com/gruntwork-io/terragrunt/aws_helper"
-	"github.com/gruntwork-io/terragrunt/options"
+	"github.com/gads-citron/terragrunt/aws_helper"
+	"github.com/gads-citron/terragrunt/options"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -351,7 +351,7 @@ func TestGetTerraformInitArgs(t *testing.T) {
 }
 
 // Test to validate cases when is not possible to read all S3 configurations
-// https://github.com/gruntwork-io/terragrunt/issues/2109
+// https://github.com/gads-citron/terragrunt/issues/2109
 func TestNegativePublicAccessResponse(t *testing.T) {
 	t.Parallel()
 	testCases := []struct {

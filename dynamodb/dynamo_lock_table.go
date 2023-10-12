@@ -7,10 +7,10 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terragrunt/aws_helper"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/terragrunt/aws_helper"
+	"github.com/gads-citron/terragrunt/options"
+	"github.com/gads-citron/terragrunt/util"
 )
 
 // DynamoDB only allows 10 table creates/deletes simultaneously. To ensure we don't hit this error, especially when

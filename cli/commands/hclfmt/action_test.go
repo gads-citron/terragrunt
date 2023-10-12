@@ -5,12 +5,12 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/gruntwork-io/terratest/modules/files"
+	"github.com/gads-citron/terratest/modules/files"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/terragrunt/options"
+	"github.com/gads-citron/terragrunt/util"
 )
 
 func TestHCLFmt(t *testing.T) {

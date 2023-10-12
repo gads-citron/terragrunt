@@ -12,9 +12,9 @@ import (
 	"github.com/hashicorp/hcl/v2/hclwrite"
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/terragrunt/options"
+	"github.com/gads-citron/terragrunt/util"
 )
 
 const (

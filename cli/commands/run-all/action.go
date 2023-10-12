@@ -1,10 +1,10 @@
 package runall
 
 import (
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terragrunt/configstack"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/shell"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/terragrunt/configstack"
+	"github.com/gads-citron/terragrunt/options"
+	"github.com/gads-citron/terragrunt/shell"
 )
 
 // Known terraform commands that are explicitly not supported in run-all due to the nature of the command. This is

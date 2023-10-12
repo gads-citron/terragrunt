@@ -1,10 +1,10 @@
 package terraform
 
 import (
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/gruntwork-cli/collections"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/pkg/cli"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/gruntwork-cli/collections"
+	"github.com/gads-citron/terragrunt/options"
+	"github.com/gads-citron/terragrunt/pkg/cli"
 )
 
 const (

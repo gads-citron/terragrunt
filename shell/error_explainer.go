@@ -4,9 +4,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/gruntwork-io/gruntwork-cli/collections"
+	"github.com/gads-citron/gruntwork-cli/collections"
 
-	"github.com/gruntwork-io/go-commons/errors"
+	"github.com/gads-citron/go-commons/errors"
 	"github.com/hashicorp/go-multierror"
 )
 

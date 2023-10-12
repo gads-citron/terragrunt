@@ -12,16 +12,16 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/gruntwork-io/terragrunt/configstack"
+	"github.com/gads-citron/terragrunt/configstack"
 
 	"github.com/zclconf/go-cty/cty"
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terragrunt/cli/commands/terraform"
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/terragrunt/cli/commands/terraform"
+	"github.com/gads-citron/terragrunt/config"
+	"github.com/gads-citron/terragrunt/options"
+	"github.com/gads-citron/terragrunt/util"
 )
 
 func Run(opts *options.TerragruntOptions) error {
@@ -32,7 +32,7 @@ func Run(opts *options.TerragruntOptions) error {
 
 func runRenderJSON(opts *options.TerragruntOptions, cfg *config.TerragruntConfig) error {
 	if cfg == nil {
-		return fmt.Errorf("Terragrunt was not able to render the config as json because it received no config. This is almost certainly a bug in Terragrunt. Please open an issue on github.com/gruntwork-io/terragrunt with this message and the contents of your terragrunt.hcl.")
+		return fmt.Errorf("Terragrunt was not able to render the config as json because it received no config. This is almost certainly a bug in Terragrunt. Please open an issue on github.com/gads-citron/terragrunt with this message and the contents of your terragrunt.hcl.")
 	}
 
 	dependentModules := configstack.FindWhereWorkingDirIsIncluded(opts, cfg)

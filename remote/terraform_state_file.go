@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/terragrunt/util"
 )
 
 // TODO: this file could be changed to use the Terraform Go code to read state files, but that code is relatively

@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terragrunt/options"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/terragrunt/options"
 )
 
 // Prompt the user for text in the CLI. Returns the text entered by the user.

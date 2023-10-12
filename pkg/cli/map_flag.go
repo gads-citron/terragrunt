@@ -4,8 +4,8 @@ import (
 	libflag "flag"
 	"strings"
 
-	"github.com/gruntwork-io/go-commons/collections"
-	"github.com/gruntwork-io/go-commons/errors"
+	"github.com/gads-citron/go-commons/collections"
+	"github.com/gads-citron/go-commons/errors"
 	"github.com/urfave/cli/v2"
 )
 

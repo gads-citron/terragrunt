@@ -18,8 +18,8 @@ import (
 	"github.com/hashicorp/hcl/v2/hclwrite"
 	"github.com/mattn/go-zglob"
 
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/terragrunt/options"
+	"github.com/gads-citron/terragrunt/util"
 )
 
 func Run(opts *options.TerragruntOptions) error {

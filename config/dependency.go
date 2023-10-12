@@ -21,14 +21,14 @@ import (
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terragrunt/aws_helper"
-	"github.com/gruntwork-io/terragrunt/codegen"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/remote"
-	"github.com/gruntwork-io/terragrunt/shell"
-	"github.com/gruntwork-io/terragrunt/terraform"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/terragrunt/aws_helper"
+	"github.com/gads-citron/terragrunt/codegen"
+	"github.com/gads-citron/terragrunt/options"
+	"github.com/gads-citron/terragrunt/remote"
+	"github.com/gads-citron/terragrunt/shell"
+	"github.com/gads-citron/terragrunt/terraform"
+	"github.com/gads-citron/terragrunt/util"
 )
 
 const renderJsonCommand = "render-json"
@@ -487,7 +487,7 @@ func getOutputJsonWithCaching(targetConfig string, terragruntOptions *options.Te
 
 	// When AWS Client Side Monitoring (CSM) is enabled the aws-sdk-go displays log as a plaintext "Enabling CSM" to stdout, even if the `output -json` flag is specified. The final output looks like this: "2023/05/04 20:22:43 Enabling CSM{...omitted json string...}", and and prevents proper json parsing. Since there is no way to disable this log, the only way out is to filter.
 	// Related AWS code: https://github.com/aws/aws-sdk-go/blob/81d1cbbc6a2028023aff7bcab0fe1be320cd39f7/aws/session/session.go#L444
-	// Related issues: https://github.com/gruntwork-io/terragrunt/issues/2233 https://github.com/hashicorp/terraform-provider-aws/issues/23620
+	// Related issues: https://github.com/gads-citron/terragrunt/issues/2233 https://github.com/hashicorp/terraform-provider-aws/issues/23620
 	if index := bytes.IndexByte(newJsonBytes, byte('{')); index > 0 {
 		newJsonBytes = newJsonBytes[index:]
 	}
@@ -506,7 +506,7 @@ func cloneTerragruntOptionsForDependency(terragruntOptions *options.TerragruntOp
 	targetOptions := terragruntOptions.Clone(targetConfig)
 	targetOptions.OriginalTerragruntConfigPath = targetConfig
 	// Clear IAMRoleOptions in case if it is different from one passed through CLI to allow dependencies to define own iam roles
-	// https://github.com/gruntwork-io/terragrunt/issues/1853#issuecomment-940102676
+	// https://github.com/gads-citron/terragrunt/issues/1853#issuecomment-940102676
 	if targetOptions.IAMRoleOptions != targetOptions.OriginalIAMRoleOptions {
 		targetOptions.IAMRoleOptions = options.IAMRoleOptions{}
 	}

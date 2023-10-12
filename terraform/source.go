@@ -13,8 +13,8 @@ import (
 	urlhelper "github.com/hashicorp/go-getter/helper/url"
 	"github.com/sirupsen/logrus"
 
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/terragrunt/util"
 )
 
 var forcedRegexp = regexp.MustCompile(`^([A-Za-z0-9]+)::(.+)$`)

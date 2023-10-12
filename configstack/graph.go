@@ -1,8 +1,8 @@
 package configstack
 
 import (
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/terragrunt/util"
 )
 
 // Check for dependency cycles in the given list of modules and return an error if one is found

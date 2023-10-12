@@ -19,12 +19,12 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/go-commons/files"
-	"github.com/gruntwork-io/terragrunt/codegen"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/remote"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/go-commons/files"
+	"github.com/gads-citron/terragrunt/codegen"
+	"github.com/gads-citron/terragrunt/options"
+	"github.com/gads-citron/terragrunt/remote"
+	"github.com/gads-citron/terragrunt/util"
 )
 
 const (
@@ -492,11 +492,11 @@ func GetTerraformSourceUrl(terragruntOptions *options.TerragruntOptions, terragr
 // Example:
 // Suppose terragrunt is called with:
 //
-//	--terragrunt-source-map git::ssh://git@github.com/gruntwork-io/i-dont-exist.git=/path/to/local-modules
+//	--terragrunt-source-map git::ssh://git@github.com/gads-citron/i-dont-exist.git=/path/to/local-modules
 //
 // and the terraform source is:
 //
-//	git::ssh://git@github.com/gruntwork-io/i-dont-exist.git//fixture-source-map/modules/app?ref=master
+//	git::ssh://git@github.com/gads-citron/i-dont-exist.git//fixture-source-map/modules/app?ref=master
 //
 // This function will take that source and transform it to:
 //
@@ -676,7 +676,7 @@ func ParseConfigFile(filename string, terragruntOptions *options.TerragruntOptio
 //  2. Parse locals. Since locals are parsed next, you can only reference other locals in the locals block. Although it
 //     is possible to merge locals from a config imported with an include block, we do not do that here to avoid
 //     complicated referencing issues. Please refer to the globals proposal for an alternative that allows merging from
-//     included config: https://github.com/gruntwork-io/terragrunt/issues/814
+//     included config: https://github.com/gads-citron/terragrunt/issues/814
 //     Allowed References:
 //     - locals
 //  3. Parse dependency blocks. This includes running `terragrunt output` to fetch the output data from another
@@ -708,7 +708,7 @@ func ParseConfigString(
 	}
 
 	// Initial evaluation of configuration to load flags like IamRole which will be used for final parsing
-	// https://github.com/gruntwork-io/terragrunt/issues/667
+	// https://github.com/gads-citron/terragrunt/issues/667
 	if err := setIAMRole(configString, terragruntOptions, includeFromChild, filename); err != nil {
 		return nil, err
 	}

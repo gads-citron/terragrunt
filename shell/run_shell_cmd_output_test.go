@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/gruntwork-io/terragrunt/options"
+	"github.com/gads-citron/terragrunt/options"
 	"github.com/stretchr/testify/assert"
 )
 

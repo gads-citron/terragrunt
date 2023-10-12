@@ -11,8 +11,8 @@ import (
 
 	"golang.org/x/sys/windows"
 
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terragrunt/options"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/terragrunt/options"
 )
 
 const InvalidHandleErrorMessage = "The handle is invalid"

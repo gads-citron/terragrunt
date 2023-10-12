@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/gruntwork-io/terragrunt/options"
+	"github.com/gads-citron/terragrunt/options"
 )
 
 // WriteDot is used to emit a GraphViz compatible definition

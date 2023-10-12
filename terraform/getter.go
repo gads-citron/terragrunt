@@ -16,8 +16,8 @@ import (
 	"github.com/hashicorp/go-getter"
 	safetemp "github.com/hashicorp/go-safetemp"
 
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/terragrunt/util"
 )
 
 // httpClient is the default client to be used by HttpGetters.
@@ -57,12 +57,12 @@ type RegistryServicePath struct {
 // but all the relevant packages are internal to the terraform repository, thus making it difficult to use as a
 // library. For now, we keep things simple by supporting providing tokens via env vars and in the future, we can
 // consider implementing functionality to load credentials from terraform.
-// GH issue: https://github.com/gruntwork-io/terragrunt/issues/1771
+// GH issue: https://github.com/gads-citron/terragrunt/issues/1771
 //
 // MAINTAINER'S NOTE: Ideally we can support a shorthand notation that omits the tfr:// protocol to detect that it is
 // referring to a terraform registry, but this requires implementing a complex detector and ensuring it has precedence
 // over the file detector. We deferred the implementation for that to a future release.
-// GH issue: https://github.com/gruntwork-io/terragrunt/issues/1772
+// GH issue: https://github.com/gads-citron/terragrunt/issues/1772
 type RegistryGetter struct {
 	client *getter.Client
 }

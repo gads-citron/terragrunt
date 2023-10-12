@@ -8,12 +8,12 @@ import (
 
 	"github.com/hashicorp/go-getter"
 
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terragrunt/cli/commands"
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/terraform"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/terragrunt/cli/commands"
+	"github.com/gads-citron/terragrunt/config"
+	"github.com/gads-citron/terragrunt/options"
+	"github.com/gads-citron/terragrunt/terraform"
+	"github.com/gads-citron/terragrunt/util"
 )
 
 // manifest for files copied from terragrunt module folder (i.e., the folder that contains the current terragrunt.hcl)
@@ -84,7 +84,7 @@ func downloadTerraformSourceIfNecessary(terraformSource *terraform.Source, terra
 
 	var previousVersion = ""
 	// read previous source version
-	// https://github.com/gruntwork-io/terragrunt/issues/1921
+	// https://github.com/gads-citron/terragrunt/issues/1921
 	if util.FileExists(terraformSource.VersionFile) {
 		previousVersion, err = readVersionFile(terraformSource)
 		if err != nil {
@@ -115,7 +115,7 @@ func downloadTerraformSourceIfNecessary(terraformSource *terraform.Source, terra
 
 	currentVersion, err := terraformSource.EncodeSourceVersion()
 	// if source versions are different or calculating version failed, create file to run init
-	// https://github.com/gruntwork-io/terragrunt/issues/1921
+	// https://github.com/gads-citron/terragrunt/issues/1921
 	if previousVersion != currentVersion || err != nil {
 		initFile := util.JoinPath(terraformSource.WorkingDir, moduleInitRequiredFile)
 		f, createErr := os.Create(initFile)

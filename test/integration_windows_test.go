@@ -12,7 +12,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/terragrunt/util"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -57,8 +57,8 @@ func TestWindowsTerragruntSourceMapDebug(t *testing.T) {
 				"TERRAGRUNT_SOURCE_MAP",
 				strings.Join(
 					[]string{
-						fmt.Sprintf("git::ssh://git@github.com/gruntwork-io/i-dont-exist.git=%s", targetPath),
-						fmt.Sprintf("git::ssh://git@github.com/gruntwork-io/another-dont-exist.git=%s", targetPath),
+						fmt.Sprintf("git::ssh://git@github.com/gads-citron/i-dont-exist.git=%s", targetPath),
+						fmt.Sprintf("git::ssh://git@github.com/gads-citron/another-dont-exist.git=%s", targetPath),
 					},
 					",",
 				),

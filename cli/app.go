@@ -8,27 +8,27 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/gruntwork-io/terragrunt/shell"
+	"github.com/gads-citron/terragrunt/shell"
 
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/go-commons/version"
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/go-commons/version"
+	"github.com/gads-citron/terragrunt/config"
+	"github.com/gads-citron/terragrunt/util"
 	hashicorpversion "github.com/hashicorp/go-version"
 
-	"github.com/gruntwork-io/go-commons/env"
-	"github.com/gruntwork-io/terragrunt/cli/commands"
-	awsproviderpatch "github.com/gruntwork-io/terragrunt/cli/commands/aws-provider-patch"
-	graphdependencies "github.com/gruntwork-io/terragrunt/cli/commands/graph-dependencies"
-	"github.com/gruntwork-io/terragrunt/cli/commands/hclfmt"
-	outputmodulegroups "github.com/gruntwork-io/terragrunt/cli/commands/output-module-groups"
-	renderjson "github.com/gruntwork-io/terragrunt/cli/commands/render-json"
-	runall "github.com/gruntwork-io/terragrunt/cli/commands/run-all"
-	"github.com/gruntwork-io/terragrunt/cli/commands/terraform"
-	terragruntinfo "github.com/gruntwork-io/terragrunt/cli/commands/terragrunt-info"
-	validateinputs "github.com/gruntwork-io/terragrunt/cli/commands/validate-inputs"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/pkg/cli"
+	"github.com/gads-citron/go-commons/env"
+	"github.com/gads-citron/terragrunt/cli/commands"
+	awsproviderpatch "github.com/gads-citron/terragrunt/cli/commands/aws-provider-patch"
+	graphdependencies "github.com/gads-citron/terragrunt/cli/commands/graph-dependencies"
+	"github.com/gads-citron/terragrunt/cli/commands/hclfmt"
+	outputmodulegroups "github.com/gads-citron/terragrunt/cli/commands/output-module-groups"
+	renderjson "github.com/gads-citron/terragrunt/cli/commands/render-json"
+	runall "github.com/gads-citron/terragrunt/cli/commands/run-all"
+	"github.com/gads-citron/terragrunt/cli/commands/terraform"
+	terragruntinfo "github.com/gads-citron/terragrunt/cli/commands/terragrunt-info"
+	validateinputs "github.com/gads-citron/terragrunt/cli/commands/validate-inputs"
+	"github.com/gads-citron/terragrunt/options"
+	"github.com/gads-citron/terragrunt/pkg/cli"
 )
 
 func init() {
@@ -45,7 +45,7 @@ func NewApp(writer io.Writer, errWriter io.Writer) *cli.App {
 
 	app := cli.NewApp()
 	app.Name = "terragrunt"
-	app.Usage = "Terragrunt is a thin wrapper for Terraform that provides extra tools for working with multiple\nTerraform modules, remote state, and locking. For documentation, see https://github.com/gruntwork-io/terragrunt/."
+	app.Usage = "Terragrunt is a thin wrapper for Terraform that provides extra tools for working with multiple\nTerraform modules, remote state, and locking. For documentation, see https://github.com/gads-citron/terragrunt/."
 	app.Author = "Gruntwork <www.gruntwork.io>"
 	app.Version = version.GetVersion()
 	app.Writer = writer

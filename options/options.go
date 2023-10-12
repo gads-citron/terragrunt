@@ -9,8 +9,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/terragrunt/util"
 	"github.com/hashicorp/go-version"
 	"github.com/sirupsen/logrus"
 )
@@ -143,7 +143,7 @@ type TerragruntOptions struct {
 	// IAM Role options that should be used when authenticating to AWS.
 	IAMRoleOptions IAMRoleOptions
 
-	// If set to true, continue running *-all commands even if a dependency has errors. This is mostly useful for 'output-all <some_variable>'. See https://github.com/gruntwork-io/terragrunt/issues/193
+	// If set to true, continue running *-all commands even if a dependency has errors. This is mostly useful for 'output-all <some_variable>'. See https://github.com/gads-citron/terragrunt/issues/193
 	IgnoreDependencyErrors bool
 
 	// If set to true, ignore the dependency order when running *-all command.
@@ -388,7 +388,7 @@ func (opts *TerragruntOptions) Clone(terragruntConfigPath string) *TerragruntOpt
 	workingDir := filepath.Dir(terragruntConfigPath)
 
 	// Note that we clone lists and maps below as TerragruntOptions may be used and modified concurrently in the code
-	// during xxx-all commands (e.g., apply-all, plan-all). See https://github.com/gruntwork-io/terragrunt/issues/367
+	// during xxx-all commands (e.g., apply-all, plan-all). See https://github.com/gads-citron/terragrunt/issues/367
 	// for more info.
 	return &TerragruntOptions{
 		TerragruntConfigPath:           terragruntConfigPath,

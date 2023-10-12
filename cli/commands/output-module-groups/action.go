@@ -3,10 +3,10 @@ package outputmodulegroups
 import (
 	"fmt"
 
-	"github.com/gruntwork-io/terragrunt/cli/commands/terraform"
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/configstack"
-	"github.com/gruntwork-io/terragrunt/options"
+	"github.com/gads-citron/terragrunt/cli/commands/terraform"
+	"github.com/gads-citron/terragrunt/config"
+	"github.com/gads-citron/terragrunt/configstack"
+	"github.com/gads-citron/terragrunt/options"
 )
 
 func Run(opts *options.TerragruntOptions) error {

@@ -16,9 +16,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	terragruntinfo "github.com/gruntwork-io/terragrunt/cli/commands/terragrunt-info"
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/util"
+	terragruntinfo "github.com/gads-citron/terragrunt/cli/commands/terragrunt-info"
+	"github.com/gads-citron/terragrunt/config"
+	"github.com/gads-citron/terragrunt/util"
 )
 
 // NOTE: We don't run these tests in parallel because it modifies the environment variable, so it can affect other tests
@@ -223,8 +223,8 @@ func TestTerragruntSourceMapEnvArg(t *testing.T) {
 		"TERRAGRUNT_SOURCE_MAP",
 		strings.Join(
 			[]string{
-				fmt.Sprintf("git::ssh://git@github.com/gruntwork-io/i-dont-exist.git=%s", tmpEnvPath),
-				fmt.Sprintf("git::ssh://git@github.com/gruntwork-io/another-dont-exist.git=%s", tmpEnvPath),
+				fmt.Sprintf("git::ssh://git@github.com/gads-citron/i-dont-exist.git=%s", tmpEnvPath),
+				fmt.Sprintf("git::ssh://git@github.com/gads-citron/another-dont-exist.git=%s", tmpEnvPath),
 			},
 			",",
 		),

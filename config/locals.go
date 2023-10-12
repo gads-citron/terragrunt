@@ -9,9 +9,9 @@ import (
 	"github.com/hashicorp/hcl/v2/hclsyntax"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/terragrunt/options"
+	"github.com/gads-citron/terragrunt/util"
 )
 
 // MaxIter is the maximum number of depth we support in recursively evaluating locals.
@@ -212,7 +212,7 @@ func canEvaluate(
 	for _, var_ := range vars {
 		// This should never happen, but if it does, we can't evaluate this expression.
 		if var_.IsRelative() {
-			reason := "You've reached an impossible condition and is almost certainly a bug in terragrunt. Please open an issue at github.com/gruntwork-io/terragrunt with this message and the contents of your terragrunt.hcl file that caused this."
+			reason := "You've reached an impossible condition and is almost certainly a bug in terragrunt. Please open an issue at github.com/gads-citron/terragrunt with this message and the contents of your terragrunt.hcl file that caused this."
 			return false, reason
 		}
 
@@ -358,5 +358,5 @@ func (err CouldNotEvaluateAllLocalsError) Error() string {
 type MaxIterError struct{}
 
 func (err MaxIterError) Error() string {
-	return "Maximum iterations reached in attempting to evaluate locals. This is most likely a bug in Terragrunt. Please file an issue on the project: https://github.com/gruntwork-io/terragrunt/issues"
+	return "Maximum iterations reached in attempting to evaluate locals. This is most likely a bug in Terragrunt. Please file an issue on the project: https://github.com/gads-citron/terragrunt/issues"
 }

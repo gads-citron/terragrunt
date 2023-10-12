@@ -3,10 +3,10 @@ package main
 import (
 	"os"
 
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terragrunt/cli"
-	"github.com/gruntwork-io/terragrunt/shell"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/terragrunt/cli"
+	"github.com/gads-citron/terragrunt/shell"
+	"github.com/gads-citron/terragrunt/util"
 )
 
 // The main entrypoint for Terragrunt

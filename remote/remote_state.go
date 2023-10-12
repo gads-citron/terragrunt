@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/terragrunt/codegen"
-	"github.com/gruntwork-io/terragrunt/options"
+	"github.com/gads-citron/go-commons/errors"
+	"github.com/gads-citron/terragrunt/codegen"
+	"github.com/gads-citron/terragrunt/options"
 )
 
 // Configuration for Terraform remote state

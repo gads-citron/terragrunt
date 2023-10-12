@@ -23,7 +23,7 @@ var (
 	// parsed command line arguments).
 	//
 	// This might go away once we migrate toproper cli library
-	// (see https://github.com/gruntwork-io/terragrunt/blob/master/cli/args.go#L29)
+	// (see https://github.com/gads-citron/terragrunt/blob/master/cli/args.go#L29)
 	GlobalFallbackLogEntry *logrus.Entry
 
 	disableLogColors bool

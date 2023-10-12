@@ -1,7 +1,7 @@
 package terraform
 
 import (
-	"github.com/gruntwork-io/go-commons/errors"
+	"github.com/gads-citron/go-commons/errors"
 	"github.com/hashicorp/terraform-config-inspect/tfconfig"
 )
 

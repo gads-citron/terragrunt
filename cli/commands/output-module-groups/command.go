@@ -1,8 +1,8 @@
 package outputmodulegroups
 
 import (
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/pkg/cli"
+	"github.com/gads-citron/terragrunt/options"
+	"github.com/gads-citron/terragrunt/pkg/cli"
 )
 
 const (

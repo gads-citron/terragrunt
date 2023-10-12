@@ -13,11 +13,11 @@ import (
 
 	"github.com/google/shlex"
 
-	"github.com/gruntwork-io/terragrunt/cli/commands/terraform"
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/options"
-	tr "github.com/gruntwork-io/terragrunt/terraform"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/gads-citron/terragrunt/cli/commands/terraform"
+	"github.com/gads-citron/terragrunt/config"
+	"github.com/gads-citron/terragrunt/options"
+	tr "github.com/gads-citron/terragrunt/terraform"
+	"github.com/gads-citron/terragrunt/util"
 )
 
 func Run(opts *options.TerragruntOptions) error {
