@@ -235,4 +235,4 @@ to demonstrate the approach.
 ## References
 
 - [Terraform Issue proposing for_each on modules](https://github.com/hashicorp/terraform/issues/17519)
-- [Original RFC PR](https://github.com/gruntwork-io/terragrunt/pull/853)
+- [Original RFC PR](https://github.com/gads-citron/terragrunt/pull/853)

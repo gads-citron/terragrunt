@@ -42,7 +42,7 @@ to Terragrunt 0.19.x and newer:
 1. [Use terraform \<0.12](#use-older-terraform)
 
 Check out [this PR in the terragrunt-infrastructure-live-example
-repo](https://github.com/gruntwork-io/terragrunt-infrastructure-live-example/pull/17) for an example of what the code
+repo](https://github.com/gads-citron/terragrunt-infrastructure-live-example/pull/17) for an example of what the code
 changes look like.
 
 

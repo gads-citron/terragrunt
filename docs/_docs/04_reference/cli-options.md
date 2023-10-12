@@ -84,11 +84,11 @@ This will recursively search the current working directory for any folders that 
 modules with dependencies between them—either via `dependency` blocks or `terraform_remote_state` data sources—and
 you've never deployed them, then `run-all plan` will fail as it will not be possible to resolve the `dependency` blocks
 or `terraform_remote_state` data sources! Please [see here for more
-information](https://github.com/gruntwork-io/terragrunt/issues/720#issuecomment-497888756).
+information](https://github.com/gads-citron/terragrunt/issues/720#issuecomment-497888756).
 
 **[NOTE]** Using `run-all` with `apply` or `destroy` silently adds the `-auto-approve` flag to the command line
 arguments passed to Terraform due to issues with shared `stdin` making individual approvals impossible. Please
-[see here for more information](https://github.com/gruntwork-io/terragrunt/issues/386#issuecomment-358306268)
+[see here for more information](https://github.com/gads-citron/terragrunt/issues/386#issuecomment-358306268)
 
 
 
@@ -116,7 +116,7 @@ This will recursively search the current working directory for any folders that 
 dependencies between them—either via `dependency` blocks or `terraform_remote_state` data sources—and you've never
 deployed them, then `run-all plan` will fail as it will not be possible to resolve the `dependency` blocks or
 `terraform_remote_state` data sources! Please [see here for more
-information](https://github.com/gruntwork-io/terragrunt/issues/720#issuecomment-497888756).
+information](https://github.com/gads-citron/terragrunt/issues/720#issuecomment-497888756).
 
 
 ### apply-all (DEPRECATED: use run-all)
@@ -140,7 +140,7 @@ This will recursively search the current working directory for any folders that 
 
 **[NOTE]** Using `apply-all` silently adds the `-auto-approve` flag to the command line arguments passed to Terraform
 due to issues with shared `stdin` making individual approvals impossible. Please [see here for more
-information](https://github.com/gruntwork-io/terragrunt/issues/386#issuecomment-358306268)
+information](https://github.com/gads-citron/terragrunt/issues/386#issuecomment-358306268)
 
 
 ### output-all (DEPRECATED: use run-all)
@@ -166,7 +166,7 @@ This will recursively search the current working directory for any folders that 
 dependencies between them—either via `dependency` blocks or `terraform_remote_state` data sources—and you've never
 deployed them, then `output-all` will fail as it will not be possible to resolve the `dependency` blocks or
 `terraform_remote_state` data sources! Please [see here for more
-information](https://github.com/gruntwork-io/terragrunt/issues/720#issuecomment-497888756).
+information](https://github.com/gads-citron/terragrunt/issues/720#issuecomment-497888756).
 
 ### destroy-all (DEPRECATED: use run-all)
 
@@ -189,7 +189,7 @@ This will recursively search the current working directory for any folders that 
 
 **[NOTE]** Using `destroy-all` silently adds the `-auto-approve` flag to the command line arguments passed to Terraform
 due to issues with shared `stdin` making individual approvals impossible. Please [see here for more
-information](https://github.com/gruntwork-io/terragrunt/issues/386#issuecomment-358306268)
+information](https://github.com/gads-citron/terragrunt/issues/386#issuecomment-358306268)
 
 
 ### validate-all (DEPRECATED: use run-all)
@@ -686,10 +686,10 @@ whether you were running `apply`, or `run-all`, or using a `dependency`.
 **NOTE**: This setting is ignored if you pass in `--terragrunt-source`.
 
 Note that this only performs literal matches on the URL portion. For example, a map key of
-`ssh://git@github.com/gruntwork-io/terragrunt.git` will only match terragrunt configurations with source `source =
-"ssh://git@github.com/gruntwork-io/terragrunt.git//xxx"` and not sources of the form `source =
-"git::ssh://git@github.com/gruntwork-io/terragrunt.git//xxx"`. The latter requires a map key of
-`git::ssh://git@github.com/gruntwork-io/terragrunt.git`.
+`ssh://git@github.com/gads-citron/terragrunt.git` will only match terragrunt configurations with source `source =
+"ssh://git@github.com/gads-citron/terragrunt.git//xxx"` and not sources of the form `source =
+"git::ssh://git@github.com/gads-citron/terragrunt.git//xxx"`. The latter requires a map key of
+`git::ssh://git@github.com/gads-citron/terragrunt.git`.
 
 
 

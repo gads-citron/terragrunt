@@ -1,4 +1,4 @@
-module github.com/gruntwork-io/terragrunt
+module github.com/gads-citron/terragrunt
 
 go 1.21
 
@@ -9,7 +9,7 @@ require (
 	github.com/fatih/structs v1.1.0
 	github.com/go-errors/errors v1.4.2
 	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510
-	github.com/gruntwork-io/terratest v0.41.0
+	github.com/gads-citron/terratest v0.41.0
 	github.com/hashicorp/go-cleanhttp v0.5.2
 	github.com/hashicorp/go-getter v1.7.1
 	github.com/hashicorp/go-multierror v1.1.1
@@ -56,8 +56,8 @@ require (
 )
 
 require (
-	github.com/gruntwork-io/go-commons v0.17.1
-	github.com/gruntwork-io/gruntwork-cli v0.7.0
+	github.com/gads-citron/go-commons v0.17.1
+	github.com/gads-citron/gruntwork-cli v0.7.0
 	github.com/urfave/cli/v2 v2.25.5
 )
 

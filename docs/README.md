@@ -8,7 +8,7 @@ Terragrunt website is built with Jekyll and published on Github Pages from `docs
 
 ## Download project
 
-Clone or fork Terragrunt [repository](https://github.com/gruntwork-io/terragrunt).
+Clone or fork Terragrunt [repository](https://github.com/gads-citron/terragrunt).
 
 ## Run
 

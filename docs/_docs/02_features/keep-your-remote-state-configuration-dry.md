@@ -218,7 +218,7 @@ remote_state {
 }
 ```
 
-Check out the [terragrunt-infrastructure-modules-example](https://github.com/gruntwork-io/terragrunt-infrastructure-modules-example) and [terragrunt-infrastructure-live-example](https://github.com/gruntwork-io/terragrunt-infrastructure-live-example) repos for fully-working sample code that demonstrates how to use Terragrunt to manage remote state.
+Check out the [terragrunt-infrastructure-modules-example](https://github.com/gads-citron/terragrunt-infrastructure-modules-example) and [terragrunt-infrastructure-live-example](https://github.com/gads-citron/terragrunt-infrastructure-live-example) repos for fully-working sample code that demonstrates how to use Terragrunt to manage remote state.
 
 ### S3-specific remote state settings
 

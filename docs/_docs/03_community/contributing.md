@@ -55,7 +55,7 @@ stays up to date and allows you to think through the problem at a high level bef
 coding.
 
 The documentation is built with Jekyll and hosted on the Github Pages from `docs` folder on `master` branch. Check out
-[Terragrunt website](https://github.com/gruntwork-io/terragrunt/tree/master/docs#working-with-the-documentation) to
+[Terragrunt website](https://github.com/gads-citron/terragrunt/tree/master/docs#working-with-the-documentation) to
 learn more about working with the documentation.
 
 ### Update the tests
@@ -91,7 +91,7 @@ to include the following:
 ### Merge and release
 
 The maintainers for this repo will review your code and provide feedback. If everything looks good, they will merge the
-code and release a new version, which you'll be able to find in the [releases page](https://github.com/gruntwork-io/terragrunt/releases).
+code and release a new version, which you'll be able to find in the [releases page](https://github.com/gads-citron/terragrunt/releases).
 
 
 ## Developing Terragrunt
@@ -176,7 +176,7 @@ To ensure that your changes get properly formatted, please install the git pre-c
 
 ### Releasing new versions
 
-To release a new version, just go to the [Releases Page](https://github.com/gruntwork-io/terragrunt/releases) and create a new release. The CircleCI job for this repo has been configured to:
+To release a new version, just go to the [Releases Page](https://github.com/gads-citron/terragrunt/releases) and create a new release. The CircleCI job for this repo has been configured to:
 
 1.  Automatically detect new tags.
 

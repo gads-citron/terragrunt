@@ -155,7 +155,7 @@ When Terragrunt finds the `terraform` block with a `source` parameter in `live/s
 
 4.  Pass any variables defined in the `inputs = { …​ }` block as environment variables (prefixed with `TF_VAR_` to your Terraform code. Notice how the `inputs` block in `stage/app/terragrunt.hcl` deploys fewer and smaller instances than prod.
 
-Check out the [terragrunt-infrastructure-modules-example](https://github.com/gruntwork-io/terragrunt-infrastructure-modules-example) and [terragrunt-infrastructure-live-example](https://github.com/gruntwork-io/terragrunt-infrastructure-live-example) repos for fully-working sample code that demonstrates this new folder structure.
+Check out the [terragrunt-infrastructure-modules-example](https://github.com/gads-citron/terragrunt-infrastructure-modules-example) and [terragrunt-infrastructure-live-example](https://github.com/gads-citron/terragrunt-infrastructure-live-example) repos for fully-working sample code that demonstrates this new folder structure.
 
 ### Achieve DRY Terraform code and immutable infrastructure
 

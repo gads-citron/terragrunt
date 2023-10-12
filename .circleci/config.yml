@@ -121,7 +121,7 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - run: gruntwork-install --binary-name 'terratest_log_parser' --repo 'https://github.com/gruntwork-io/terratest' --tag 'v0.30.0'
+      - run: gruntwork-install --binary-name 'terratest_log_parser' --repo 'https://github.com/gads-citron/terratest' --tag 'v0.30.0'
       - run:
           <<: *install_tflint
 
@@ -148,7 +148,7 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - run: gruntwork-install --binary-name 'terratest_log_parser' --repo 'https://github.com/gruntwork-io/terratest' --tag 'v0.30.0'
+      - run: gruntwork-install --binary-name 'terratest_log_parser' --repo 'https://github.com/gads-citron/terratest' --tag 'v0.30.0'
       - run:
           <<: *install_tofu
       - run:
@@ -181,7 +181,7 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - run: gruntwork-install --binary-name 'terratest_log_parser' --repo 'https://github.com/gruntwork-io/terratest' --tag 'v0.30.0'
+      - run: gruntwork-install --binary-name 'terratest_log_parser' --repo 'https://github.com/gads-citron/terratest' --tag 'v0.30.0'
       - run:
           <<: *install_tofu
       - run:
@@ -213,7 +213,7 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - run: build-go-binaries --app-name terragrunt --dest-path bin --ld-flags "-X github.com/gruntwork-io/go-commons/version.Version=$CIRCLE_TAG -extldflags '-static'"
+      - run: build-go-binaries --app-name terragrunt --dest-path bin --ld-flags "-X github.com/gads-citron/go-commons/version.Version=$CIRCLE_TAG -extldflags '-static'"
       - persist_to_workspace:
           root: .
           paths: bin
@@ -231,9 +231,9 @@ jobs:
       - run:
           name: Install sign-binary-helpers
           command: |
-            curl -Ls https://raw.githubusercontent.com/gruntwork-io/gruntwork-installer/master/bootstrap-gruntwork-installer.sh | bash /dev/stdin --version "${GRUNTWORK_INSTALLER_VERSION}"
-            gruntwork-install --module-name "gruntwork-module-circleci-helpers" --repo "https://github.com/gruntwork-io/terraform-aws-ci" --tag "${MODULE_CI_VERSION}"
-            gruntwork-install --module-name "sign-binary-helpers" --repo "https://github.com/gruntwork-io/terraform-aws-ci" --tag "${MODULE_CI_VERSION}"
+            curl -Ls https://raw.githubusercontent.com/gads-citron/gruntwork-installer/master/bootstrap-gruntwork-installer.sh | bash /dev/stdin --version "${GRUNTWORK_INSTALLER_VERSION}"
+            gruntwork-install --module-name "gruntwork-module-circleci-helpers" --repo "https://github.com/gads-citron/terraform-aws-ci" --tag "${MODULE_CI_VERSION}"
+            gruntwork-install --module-name "sign-binary-helpers" --repo "https://github.com/gads-citron/terraform-aws-ci" --tag "${MODULE_CI_VERSION}"
       - run:
           name: Compile and sign the binaries
           command: |

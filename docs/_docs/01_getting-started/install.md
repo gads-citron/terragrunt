@@ -13,7 +13,7 @@ nav_title_link: /docs/
 
 ### Download from releases page
 
-1. Go to the [Releases Page](https://github.com/gruntwork-io/terragrunt/releases).
+1. Go to the [Releases Page](https://github.com/gads-citron/terragrunt/releases).
 2. Downloading the binary for your operating system: e.g., if you're on a Mac, download `terragrunt_darwin_amd64`; if you're on Windows, download `terragrunt_windows_amd64.exe`, etc.
 3. Rename the downloaded file to `terragrunt`.
 4. Add execute permissions to the binary. E.g., On Linux and Mac: `chmod u+x terragrunt`.
@@ -21,8 +21,8 @@ nav_title_link: /docs/
 
 ### Install via a package manager
 
-Note that all the different package managers are third party.The third party Terragrunt packages may not be updated with the latest version, but are often close. Please check your version against the latest available on the [Releases Page](https://github.com/gruntwork-io/terragrunt/releases).
-If you  want the latest version, the recommended installation option is to [download from the releases page](https://github.com/gruntwork-io/terragrunt/releases).
+Note that all the different package managers are third party.The third party Terragrunt packages may not be updated with the latest version, but are often close. Please check your version against the latest available on the [Releases Page](https://github.com/gads-citron/terragrunt/releases).
+If you  want the latest version, the recommended installation option is to [download from the releases page](https://github.com/gads-citron/terragrunt/releases).
 
 * **Windows**: You can install Terragrunt on Windows using [Chocolatey](https://chocolatey.org/): `choco install terragrunt`.
 
@@ -34,4 +34,4 @@ If you  want the latest version, the recommended installation option is to [down
 
 ### Terragrunt GitHub Action
 
-Terragrunt is also available as a GitHub Action. Instructions on how to use it can be found at [https://github.com/gruntwork-io/terragrunt-action](https://github.com/gruntwork-io/terragrunt-action).
+Terragrunt is also available as a GitHub Action. Instructions on how to use it can be found at [https://github.com/gads-citron/terragrunt-action](https://github.com/gads-citron/terragrunt-action).

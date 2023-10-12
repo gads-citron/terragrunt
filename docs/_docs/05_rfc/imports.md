@@ -74,7 +74,7 @@ all the permutations defined as variables.
 The current workaround for this use case is to specify the variables in `json` or `yaml` and merge them into the
 `inputs` attribute of the root `terragrunt.hcl` file using the `jsondecode` / `yamldecode` function with `merge`. While
 this works, the configuration becomes fairly verbose as you try to workaround the fact that not all directories will
-have all the yaml files in the hierarchy. See [this example config](https://github.com/gruntwork-io/terragrunt-infrastructure-live-example/blob/b796c371f631b9ba42189fef744601cdd16d48f5/non-prod/terragrunt.hcl#L30).
+have all the yaml files in the hierarchy. See [this example config](https://github.com/gads-citron/terragrunt-infrastructure-live-example/blob/b796c371f631b9ba42189fef744601cdd16d48f5/non-prod/terragrunt.hcl#L30).
 
 Another limitation of `yaml` and `json` is that they are static configurations. This means that you can't share
 complex variables in the middle of the hierarchy that might require more computation than hard coded values. For
@@ -731,7 +731,7 @@ blocks in this way.
 ### Single terragrunt.hcl file per environment
 
 This implementation introduces a new block `module` that replaces `dependency`, `terraform`, and `inputs`. This approach
-is documented in [#759](https://github.com/gruntwork-io/terragrunt/issues/759).
+is documented in [#759](https://github.com/gads-citron/terragrunt/issues/759).
 
 In addition to the general analysis of that proposal, here are the list of Pros and Cons related to the problem of
 sharing config:
@@ -842,7 +842,7 @@ This example reuses the outputs of `module.vpc` across the two modules, which is
 #### (single file) Keeping remote state configuration DRY
 
 This example is covered in [the original issue that proposed this
-idea](https://github.com/gruntwork-io/terragrunt/issues/759).
+idea](https://github.com/gads-citron/terragrunt/issues/759).
 
 
 
@@ -945,8 +945,8 @@ include {
 
 Note how the child config updated the `global` variable in the parent config by specifying a `globals` block.
 
-You can read more about the proposal in [the issue](https://github.com/gruntwork-io/terragrunt/issues/814) and
-[corresponding PR](https://github.com/gruntwork-io/terragrunt/pull/858).
+You can read more about the proposal in [the issue](https://github.com/gads-citron/terragrunt/issues/814) and
+[corresponding PR](https://github.com/gads-citron/terragrunt/pull/858).
 
 Pros:
 
@@ -982,14 +982,14 @@ look for an alternative implementation.
 This challenge has come up numerous times in the lifetime of Terragrunt. The following are relevant issues that raise
 similar concerns:
 
-- [Shared and overridable variabls](https://github.com/gruntwork-io/terragrunt/issues/814)
-- [Being able to merge maps from inputs](https://github.com/gruntwork-io/terragrunt/issues/744)
-- [Request to allow more than one level of include](https://github.com/gruntwork-io/terragrunt/issues/303)
-- [Request to reference inputs from another config](https://github.com/gruntwork-io/terragrunt/issues/967)
-- [Partially override components of an input](https://github.com/gruntwork-io/terragrunt/issues/1011)
+- [Shared and overridable variabls](https://github.com/gads-citron/terragrunt/issues/814)
+- [Being able to merge maps from inputs](https://github.com/gads-citron/terragrunt/issues/744)
+- [Request to allow more than one level of include](https://github.com/gads-citron/terragrunt/issues/303)
+- [Request to reference inputs from another config](https://github.com/gads-citron/terragrunt/issues/967)
+- [Partially override components of an input](https://github.com/gads-citron/terragrunt/issues/1011)
 
 Relevant PRs and Releases:
 
-- [PR for RFC](https://github.com/gruntwork-io/terragrunt/pull/1025)
-- [PR for read_terragrunt_config](https://github.com/gruntwork-io/terragrunt/pull/1051) (released in
-  [v0.22.3](https://github.com/gruntwork-io/terragrunt/releases/tag/v0.22.3))
+- [PR for RFC](https://github.com/gads-citron/terragrunt/pull/1025)
+- [PR for read_terragrunt_config](https://github.com/gads-citron/terragrunt/pull/1051) (released in
+  [v0.22.3](https://github.com/gads-citron/terragrunt/releases/tag/v0.22.3))

@@ -1,4 +1,4 @@
-# See https://github.com/gruntwork-io/terraform-aws-ci/blob/main/modules/sign-binary-helpers/
+# See https://github.com/gads-citron/terraform-aws-ci/blob/main/modules/sign-binary-helpers/
 # for further instructions on how to sign the binary + submitting for notarization.
 
 source = ["./bin/terragrunt_darwin_amd64"]

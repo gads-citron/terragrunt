@@ -133,6 +133,6 @@ In this example we've seen how debug options can help us root cause issues
 in dependency and local variable resolution.
 
 <!-- See
-https://github.com/gruntwork-io/terragrunt/blob/eb692a83bee285b0baaaf4b271c66230f99b6358/docs/_docs/02_features/debugging.md
+https://github.com/gads-citron/terragrunt/blob/eb692a83bee285b0baaaf4b271c66230f99b6358/docs/_docs/02_features/debugging.md
 for thoughts on other potential features to implement.
 -->
